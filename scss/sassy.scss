@@ -1274,6 +1274,7 @@ form fieldset {
         "nav-k"
         "main-k"
         "aside-k"
+        "galeria-k"
         "footer-k";
         grid-template-columns:100%;
     }
@@ -1303,6 +1304,10 @@ form fieldset {
         grid-area:aside-k;
     }
 
+    .galeria.kaplan {
+        grid-area:galeria-k;
+    }
+
     .footer-kaplan {
         grid-area:footer-k;
         display:flex;
@@ -1330,6 +1335,7 @@ form fieldset {
         "nav-k nav-k"
         "main-k aside-k"
         "section-k section-k"
+        "galeria-k galeria-k"
         "footer-k footer-k";
         grid-template-columns:50% 50%;
     }
@@ -1361,6 +1367,10 @@ form fieldset {
         align-self:center;
     }
 
+    .galeria.kaplan {
+        grid-area:galeria-k;
+    }
+
     .footer-kaplan {
         grid-area:footer-k;
         display:flex;
@@ -1383,6 +1393,7 @@ form fieldset {
         "nav-k nav-k"
         "main-k aside-k"
         "section-k aside-k"
+        "galeria-k galeria-k"
         "footer-k footer-k";
         grid-template-columns:60% 40%;
     }
@@ -1411,6 +1422,10 @@ form fieldset {
     .aside-kaplan {
         grid-area:aside-k;
         align-self:center;
+    }
+
+    .galeria.kaplan {
+        grid-area:galeria-k;
     }
 
     .footer-kaplan {
