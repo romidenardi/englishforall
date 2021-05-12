@@ -823,7 +823,7 @@ form fieldset {
     display: none; }
   .aside-kaplan {
     grid-area: aside-k; }
-  .galeria.kaplan {
+  .galeria-kaplan {
     grid-area: galeria-k; }
   .footer-kaplan {
     grid-area: footer-k;
@@ -859,7 +859,7 @@ form fieldset {
   .aside-kaplan {
     grid-area: aside-k;
     align-self: center; }
-  .galeria.kaplan {
+  .galeria-kaplan {
     grid-area: galeria-k; }
   .footer-kaplan {
     grid-area: footer-k;
@@ -891,7 +891,7 @@ form fieldset {
   .aside-kaplan {
     grid-area: aside-k;
     align-self: center; }
-  .galeria.kaplan {
+  .galeria-kaplan {
     grid-area: galeria-k; }
   .footer-kaplan {
     grid-area: footer-k;
