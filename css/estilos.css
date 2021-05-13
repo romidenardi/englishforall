@@ -197,6 +197,9 @@ caption {
   padding: 0;
   caption-side: top; }
 
+.subtitulo-especial {
+  margin-bottom: 20px; }
+
 .card {
   border: solid 3px #707073;
   border-radius: 5px; }
