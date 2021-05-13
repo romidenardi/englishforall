@@ -43,7 +43,7 @@ h4 {
   font-size: 110%;
   font-family: "Advent Pro", sans-serif; }
 
-p, li, table, form {
+p, li, table, form, .card-text {
   color: #000000;
   font-size: 90%;
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
