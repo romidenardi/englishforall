@@ -55,6 +55,13 @@ h1 {
     font-family:$fuente-titulos;
 }
 
+.subtitulo-card {
+    color:$gris-uno;
+    font-weight:bold;
+    font-size:$tamanio-fuente*1.5;
+    font-family:$fuente-titulos;
+}
+
 h4 {
     color:$negro;
     font-weight:bold;
@@ -133,22 +140,29 @@ li {
 th {
     background-color:$azul-tres;
     color:$blanco;
-    padding:5px;
+    padding:7px;
 }
 
 td {
     background-color:$azul-cinco;
-    padding:5px;
+    padding:7px;
 }
 
-.primera-fila:first-child {
+.primera-fila > :first-child {
     border-top-left-radius:5px;
 }
 
-.primera-fila:last-child {
+.primera-fila > :last-child {
     border-top-right-radius:5px;
 }
 
+.ultima-fila > :first-child {
+    border-bottom-left-radius:5px;
+}
+
+.ultima-fila > :last-child {
+    border-bottom-right-radius:5px;
+}
 
 /*Botones*/
 
@@ -217,7 +231,7 @@ footer {
     }
 }
 
-.main-home, .main-kaplan {
+.main-home {
     margin-top:20px;
 }
 
@@ -226,7 +240,7 @@ footer {
     margin-bottom:20px;
 }
 
-.aside-home {
+.aside-home, .aside-nosotros, .aside-kaplan {
     background-image:$gradiente;
     border:solid 3px $gris-uno;
     border-radius:5px;
@@ -237,18 +251,7 @@ footer {
     margin: 20px 20px 0 20px;
 }
 
-.main-nosotros {
-    margin-top:20px;
-}
-
-.aside-nosotros, .aside-kaplan {
-    background-image:$gradiente;
-    border:solid 3px $gris-uno;
-    border-radius:5px;
-    margin:20px;
-}
-
-.section-cursos, .section-examenes {
+.section-cursos, .section-examenes, .galeria-kaplan {
     background-color:$gris-tres;
     padding-top:20px;
     padding-bottom:20px;
@@ -276,12 +279,8 @@ caption {
     caption-side:top;
 }
 
-.subtitulo-especial {
-    margin-bottom:20px;
-}
-
 .card {
-    border:solid 3px $gris-uno;
+    border:solid 3px $azul-cinco;
     border-radius:5px;
 }
 
@@ -1373,7 +1372,6 @@ form fieldset {
 
     .main-kaplan {
         grid-area:main-k;
-        align-self:center;
     }
     
     .section-kaplan {
