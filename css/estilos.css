@@ -197,6 +197,10 @@ caption {
   padding: 0;
   caption-side: top; }
 
+.card {
+  border: solid 3px #707073;
+  border-radius: 5px; }
+
 form fieldset {
   background-color: #f3f3f3;
   border-radius: 5px;

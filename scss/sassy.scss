@@ -267,6 +267,11 @@ caption {
     caption-side: top;
 }
 
+.card {
+    border:solid 3px $gris-uno;
+    border-radius:5px;
+}
+
 form fieldset {
     background-color:$gris-tres;
     border-radius:5px;
