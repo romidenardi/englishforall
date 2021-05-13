@@ -98,6 +98,12 @@ td {
   background-color: #d3e0f0;
   padding: 5px; }
 
+.primera-fila:first-child {
+  border-top-left-radius: 5px; }
+
+.primera-fila:last-child {
+  border-top-right-radius: 5px; }
+
 /*Botones*/
 .botones {
   background-color: #4D87D4;
