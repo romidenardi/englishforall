@@ -5,7 +5,7 @@
 
 // VARIABLES PARA OPERACIONES
 
-$tamanio-fuente:100%;
+$tamanio-fuente:1rem;
 
 // ESTILOS
 
@@ -22,56 +22,55 @@ $tamanio-fuente:100%;
 h1 {
     color:$azul-uno;
     font-weight:bold;
-    font-size:$tamanio-fuente*2;
     font-family:$fuente-titulos;
+    line-height:1;
 }
 
 .subtitulo-secundario-home {
     color:$azul-dos;
     font-weight:bold;
-    font-size:$tamanio-fuente*1.8;
     font-family:$fuente-titulos;
+    line-height:1;
 }
 
 .subtitulo-secundario-interior {
     color:$azul-tres;
     font-weight:bold;
-    font-size:$tamanio-fuente*1.8;
     font-family:$fuente-titulos;
     text-align: left;
+    line-height:1;
 }
 
 .subtitulo-terciario-home {
     color:$gris-uno;
     font-weight:bold;
-    font-size:$tamanio-fuente*1.5;
     font-family:$fuente-titulos;
+    line-height:1;
 }
 
 .subtitulo-terciario-interior {
     color:$azul-cuatro;
     font-weight:bold;
-    font-size:$tamanio-fuente*1.5;
     font-family:$fuente-titulos;
+    line-height:1;
 }
 
 .subtitulo-card {
     color:$gris-uno;
     font-weight:bold;
-    font-size:$tamanio-fuente*1.5;
     font-family:$fuente-titulos;
+    line-height:1;
 }
 
 h4 {
     color:$negro;
     font-weight:bold;
-    font-size:$tamanio-fuente*1.1;
     font-family:$fuente-titulos;
+    line-height:1;
 }
 
 p, li, table, form, .card-text {
     color:$negro;
-    font-size:$tamanio-fuente*0.9;
     font-family:$fuente-copys;
 }
 
@@ -81,6 +80,81 @@ form label {
 
 footer ul li {
     line-height:1.75;
+}
+
+/*Tamaños tipografía con Media Queries*/
+
+@media (max-width:480px) {
+
+    h1 {
+        font-size:$tamanio-fuente*1.7;
+    }
+    
+    .subtitulo-secundario-home, .subtitulo-secundario-interior {
+        font-size:$tamanio-fuente*1.5;
+    }
+        
+    .subtitulo-terciario-home, .subtitulo-terciario-interior, .subtitulo-card {
+        font-size:$tamanio-fuente*1.2;
+    }
+
+    h4 {
+        font-size:$tamanio-fuente*1;
+    }
+    
+    p, li, form, .card-text {
+        font-size:$tamanio-fuente*0.85;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+
+    h1 {
+        font-size:$tamanio-fuente*1.9;
+    }
+    
+    .subtitulo-secundario-home, .subtitulo-secundario-interior {
+        font-size:$tamanio-fuente*1.7;
+    }
+        
+    .subtitulo-terciario-home, .subtitulo-terciario-interior, .subtitulo-card {
+        font-size:$tamanio-fuente*1.4;
+    }
+
+    h4 {
+        font-size:$tamanio-fuente*1;
+    }
+    
+    p, li, form, .card-text {
+        font-size:$tamanio-fuente*0.9;
+    }
+
+    table, ol li {
+        font-size:$tamanio-fuente*0.8;
+    }
+}
+
+@media (min-width:769px) {
+
+    h1 {
+        font-size:$tamanio-fuente*2;
+    }
+    
+    .subtitulo-secundario-home, .subtitulo-secundario-interior {
+        font-size:$tamanio-fuente*1.8;
+    }
+        
+    .subtitulo-terciario-home, .subtitulo-terciario-interior, .subtitulo-card {
+        font-size:$tamanio-fuente*1.5;
+    }
+
+    h4 {
+        font-size:$tamanio-fuente*1.1;
+    }
+    
+    p, li, table, form, .card-text {
+        font-size:$tamanio-fuente*0.9;
+    }
 }
 
 /*Menú navegación*/
@@ -242,7 +316,7 @@ footer {
 
 .aside-home, .aside-nosotros, .aside-kaplan {
     background-image:$gradiente;
-    border:solid 3px $gris-uno;
+    border:solid 3px $azul-cinco;
     border-radius:5px;
     margin:20px;
 }
@@ -859,7 +933,6 @@ form fieldset {
 
     .main-nosotros {
         grid-area:main-n;
-        align-self:center;
     }
 
     .section-nosotros {

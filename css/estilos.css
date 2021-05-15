@@ -9,49 +9,48 @@
 h1 {
   color: #004AAD;
   font-weight: bold;
-  font-size: 200%;
-  font-family: "Advent Pro", sans-serif; }
+  font-family: "Advent Pro", sans-serif;
+  line-height: 1; }
 
 .subtitulo-secundario-home {
   color: #2270D8;
   font-weight: bold;
-  font-size: 180%;
-  font-family: "Advent Pro", sans-serif; }
+  font-family: "Advent Pro", sans-serif;
+  line-height: 1; }
 
 .subtitulo-secundario-interior {
   color: #4D87D4;
   font-weight: bold;
-  font-size: 180%;
   font-family: "Advent Pro", sans-serif;
-  text-align: left; }
+  text-align: left;
+  line-height: 1; }
 
 .subtitulo-terciario-home {
   color: #707073;
   font-weight: bold;
-  font-size: 150%;
-  font-family: "Advent Pro", sans-serif; }
+  font-family: "Advent Pro", sans-serif;
+  line-height: 1; }
 
 .subtitulo-terciario-interior {
   color: #89b6f1;
   font-weight: bold;
-  font-size: 150%;
-  font-family: "Advent Pro", sans-serif; }
+  font-family: "Advent Pro", sans-serif;
+  line-height: 1; }
 
 .subtitulo-card {
   color: #707073;
   font-weight: bold;
-  font-size: 150%;
-  font-family: "Advent Pro", sans-serif; }
+  font-family: "Advent Pro", sans-serif;
+  line-height: 1; }
 
 h4 {
   color: #000000;
   font-weight: bold;
-  font-size: 110%;
-  font-family: "Advent Pro", sans-serif; }
+  font-family: "Advent Pro", sans-serif;
+  line-height: 1; }
 
 p, li, table, form, .card-text {
   color: #000000;
-  font-size: 90%;
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 form label {
@@ -60,13 +59,52 @@ form label {
 footer ul li {
   line-height: 1.75; }
 
+/*Tamaños tipografía con Media Queries*/
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.7rem; }
+  .subtitulo-secundario-home, .subtitulo-secundario-interior {
+    font-size: 1.5rem; }
+  .subtitulo-terciario-home, .subtitulo-terciario-interior, .subtitulo-card {
+    font-size: 1.2rem; }
+  h4 {
+    font-size: 1rem; }
+  p, li, form, .card-text {
+    font-size: 0.85rem; } }
+
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    font-size: 1.9rem; }
+  .subtitulo-secundario-home, .subtitulo-secundario-interior {
+    font-size: 1.7rem; }
+  .subtitulo-terciario-home, .subtitulo-terciario-interior, .subtitulo-card {
+    font-size: 1.4rem; }
+  h4 {
+    font-size: 1rem; }
+  p, li, form, .card-text {
+    font-size: 0.9rem; }
+  table, ol li {
+    font-size: 0.8rem; } }
+
+@media (min-width: 769px) {
+  h1 {
+    font-size: 2rem; }
+  .subtitulo-secundario-home, .subtitulo-secundario-interior {
+    font-size: 1.8rem; }
+  .subtitulo-terciario-home, .subtitulo-terciario-interior, .subtitulo-card {
+    font-size: 1.5rem; }
+  h4 {
+    font-size: 1.1rem; }
+  p, li, table, form, .card-text {
+    font-size: 0.9rem; } }
+
 /*Menú navegación*/
 nav {
   background-color: #004AAD; }
   nav div ul li a {
     color: #ffffff;
     font-weight: bold;
-    font-size: 120%;
+    font-size: 1.2rem;
     font-family: "Advent Pro", sans-serif;
     text-transform: uppercase;
     text-decoration: none; }
@@ -176,7 +214,7 @@ footer {
 
 .aside-home, .aside-nosotros, .aside-kaplan {
   background-image: linear-gradient(90deg, #dce9fa, #f3f3f3);
-  border: solid 3px #707073;
+  border: solid 3px #d3e0f0;
   border-radius: 5px;
   margin: 20px; }
 
@@ -564,8 +602,7 @@ form fieldset {
   .nav-nosotros {
     grid-area: nav-n; }
   .main-nosotros {
-    grid-area: main-n;
-    align-self: center; }
+    grid-area: main-n; }
   .section-nosotros {
     grid-area: section-n; }
   .aside-nosotros {
